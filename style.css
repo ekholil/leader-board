@@ -133,10 +133,17 @@ height: 104px;
   color: #AEAEAE;
 }
 .course-time{
-  color: magenta;
-  background-color: tan;
+  display: flex;
+  align-items: center;
+  color:   #FF4A60;
+  background-color: #FFE4E8;
   padding: 3px 5px;
   border-radius: 20px;
+  font-size: 20px;
+}
+.course-time>span{
+  font-size: 12px;
+  margin-left: 6px;
 }
 
 /* for mobile devices */
