@@ -1,0 +1,166 @@
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* player section */
+body{
+  background-color: #F3F1FF;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+hr{
+  border: 1px solid #000;
+  height: 0;
+  margin: 30px 0;
+}
+nav{
+  background-color: #3363f4;
+  display: flex;
+  justify-content: center;
+}
+.nav-container{
+  display: flex;
+  width: 930px;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-container h3{
+  color: #fff;
+}
+.links{
+  display: flex;
+  align-items: center;
+}
+.links a{
+  text-decoration: none;
+  color: #fff;
+  padding-left: 30px;
+}
+.links a img {
+  width: 46px;
+  height: 46px;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container{
+  width: 870px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+}
+.section-title{
+  margin: 0;
+  padding-bottom: 30px;
+  font-size: 24px;
+  color: #562EFF;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+  
+}
+.player {
+  display: flex;
+  align-items: center;
+  
+}
+.player img {
+  width: 56px;
+  height: 56px;
+}
+.player-name{
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 16px;
+}
+
+/* blog area */
+.top-blog{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+}
+.blog{
+  display: flex;
+}
+.blog .thumbnail img{
+  width: 177px;
+height: 117px;
+}
+.blog-info{
+  margin: 0 16px;
+}
+.blog-info h3{
+  font-size: 20px;
+  font-weight: 500;
+  margin: 2px 0;
+}
+.blog-info p{
+  color:#9F9F9F;
+}
+.blog-author{
+  color: #562EFF;
+}
+
+/* latest course */
+.latest-course{
+  display: flex;
+}
+.courses{
+  margin-top: 21px;
+}
+.course{
+  padding: 15px;
+  margin-right: 24px;
+}
+.course .thumbnail img{
+  width: 224px;
+height: 104px;
+}
+.course-detail{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fas.filled{
+  color: #FFC014;
+}
+.fas.empty{
+  color: #AEAEAE;
+}
+.course-time{
+  color: magenta;
+  background-color: tan;
+  padding: 3px 5px;
+  border-radius: 20px;
+}
+
+/* for mobile devices */
+@media (max-width:600px) {
+  .container{
+    width: 100%;
+  }
+  .players{
+    grid-template-columns: 1fr;
+  }
+  .section-title{
+    text-align: center;
+  }
+  .player{
+    justify-content: center;
+  }
+  .top-blog{
+    grid-template-columns: 1fr;
+  }
+  .blog{
+    margin-left: 20px;
+  }
+  .latest-course{
+    flex-direction: column;
+  }
+}
+
